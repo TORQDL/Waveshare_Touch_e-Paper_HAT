@@ -20,7 +20,7 @@ Supported Models:
 
 Supported Raspberry Pi Devices:
 - All Raspberry Pi devices that have a standard 40-pin GPIO header.
-- All Raspberry Pi Computer Modules that have a standard 40-pin GPIO header on a carrier board.
+- All Raspberry Pi Compute Modules that have a standard 40-pin GPIO header on a carrier board.
 > 1A+&nbsp;| 1B+&nbsp;| 2B&nbsp;| 2B&nbsp;v1.2&nbsp;| 3A+&nbsp;| 3B&nbsp;| 3B+&nbsp;| 4B&nbsp;| 400&nbsp;| Zero&nbsp;| Zero&nbsp;W/WH&nbsp;| Zero&nbsp;2&nbsp;W&nbsp;| CM&nbsp;| CM2&nbsp;| CM3&nbsp;| CM3+&nbsp;| CM4
 
 Supported Operating Systems:
@@ -59,7 +59,7 @@ $ sudo pip3 install spidev
 
 ## Usage
 
-> ⚠️ Please note which e-ink screen you are using. If you are using the 2.9" model, then you should use the TP2in9 scripts, and if you are using the 2.13" model, use the TP2in13 scripts.
+> ⚠️ Please note which e-ink screen you are using. If you are using the 2.9" model, then you should use the `TP2in9` scripts, and if you are using the 2.13" model, use the `TP2in13` scripts.
 
 TODO: fill in usage information that documents/explains how to utilize these libraries for writing your own applications withoutput to the Waveshare Touch e-Paper HAT series devices.
 
