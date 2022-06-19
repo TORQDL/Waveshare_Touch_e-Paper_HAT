@@ -40,7 +40,7 @@ $ sudo apt update
 $ sudo apt install python-pip
 $ sudo apt install python-pil
 $ sudo apt install python-numpy
-$ sudo apt install python-smbios
+$ sudo apt install python-smbus
 $ sudo pip3 install RPi.GPIO
 $ sudo pip3 install spidev
 ```
@@ -52,7 +52,7 @@ $ sudo apt update
 $ sudo apt install python3-pip
 $ sudo apt install python3-pil
 $ sudo apt install python3-numpy
-$ sudo apt install python3-smbios
+$ sudo apt install python3-smbus
 $ sudo pip3 install RPi.GPIO
 $ sudo pip3 install spidev
 ```
