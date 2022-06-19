@@ -1,6 +1,6 @@
 # Waveshare Touch e-Paper HAT
 
-## About:
+## About
 
 Python code for the Waveshare Touch e-Paper HAT series.
 
