@@ -26,35 +26,64 @@ Supported Raspberry Pi Devices:
 Supported Operating Systems:
 - Raspberry Pi OS Buster (32-bit or 64-bit)
 - Raspberry Pi OS Bullseye (32-bit or 64-bit)
-- Ubuntu 22.04 (32-bit or 64-bit)
-- Ubuntu 22.04 (32-bit or 64-bit)
 
 Supported Python: 
 - Python v2: 2.7
 - Python v3: 3.7+
 
-### Python v2
+### For Python v2
 
 ``` bash
 $ sudo apt update
 $ sudo apt install python-pip
 $ sudo apt install python-pil
 $ sudo apt install python-numpy
-$ sudo apt install python-smbios
-$ sudo pip3 install RPi.GPIO
-$ sudo pip3 install spidev
+$ sudo apt install python-smbus
+$ sudo pip install RPi.GPIO
+$ sudo pip install spidev
 ```
 
-### Python v3
+### For Python v3
 
 ``` bash
 $ sudo apt update
 $ sudo apt install python3-pip
 $ sudo apt install python3-pil
 $ sudo apt install python3-numpy
-$ sudo apt install python3-smbios
+$ sudo apt install python3-smbus
 $ sudo pip3 install RPi.GPIO
 $ sudo pip3 install spidev
+```
+
+### Enable SPI and I2C
+
+``` bash
+$ sudo raspi-config
+```
+
+- Choose `Interface Options` -> `SPI` -> `Yes` to enable SPI interface.
+- Choose `Interface Options` -> `I2C` -> `Yes` to enable I2C interface.
+
+You will need to reboot now.
+
+``` bash
+$ sudo reboot now
+```
+
+### Install Python Scripts
+
+Install the scripts by cloning them from GitHub:
+
+``` bash
+$ cd ~
+$ git clone https://github.com/TORQDL/Waveshare_Touch_e-Paper_HAT.git
+```
+
+Change directory to the examples folder and run an example. For example:
+
+``` bash
+$ cd Waveshare_Touch_e-Paper_HAT/python/examples
+$ sudo python3 TP2in13_V3_test.py
 ```
 
 ## Usage
